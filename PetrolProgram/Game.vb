@@ -57,26 +57,22 @@ Public Class Game
 
     Private Sub Game_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If Dashboard.UpdatedPetrol > 0 Then
-            PetrolCost = Dashboard.UpdatedPetrol
-            lblPtlNum.Text = PetrolCost
+            lblPtlNum.Text = Maths(Dashboard.UpdatedPetrol)
         Else
-            Maths(PetrolCost)
-            lblPtlNum.Text = FuelCost
+            lblPtlNum.Text = Maths(PetrolCost)
         End If
 
         'Displaying the corrct number and if it's the Default Number do maths to have decimal
         If Dashboard.UpdatedDiesel > 0 Then
-            DieselCost = Dashboard.UpdatedDiesel
-            lblDslNum.Text = DieselCost
+            lblDslNum.Text = Maths(Dashboard.UpdatedDiesel)
         Else
-            Maths(DieselCost)
-            lblDslNum.Text = FuelCost
+            lblDslNum.Text = Maths(DieselCost)
         End If
     End Sub
 
-    Private Function Maths(Dec As Decimal)
-        Dec = DieselCost
-        FuelCost = Dec / 100
-        Return FuelCost
+    Private Function Maths(ByVal Cost As Decimal)
+        Dim Output As Decimal
+        Output = Cost / 100
+        Return ("£" & Output & " /L")
     End Function
 End Class

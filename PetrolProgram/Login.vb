@@ -30,7 +30,7 @@
         Dim strPass As String = txtPsw.Text
         System.Diagnostics.Debug.WriteLine(Password)
         If txtUsr.Text = Username And txtPsw.Text = Password Then
-            System.Diagnostics.Debug.WriteLine(Password)
+
             Dashboard.Show()
             Me.Close()
         ElseIf strUser = Username Then

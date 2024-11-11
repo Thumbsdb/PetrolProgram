@@ -1,4 +1,6 @@
-﻿Public Class Dashboard
+﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel
+
+Public Class Dashboard
     Public Shared UpdatedPetrol As Int16
     Public Shared UpdatedDiesel As Int16
     Public Shared UpdatedUsername As String = ""
@@ -10,23 +12,51 @@
     End Sub
 
     Private Sub btnUptFul_Click(sender As Object, e As EventArgs) Handles btnUptFul.Click
-        txtPtl.Text = UpdatedPetrol
-        txtDsl.Text = UpdatedDiesel
+        UpdatedPetrol = txtPtl.Text
+        UpdatedDiesel = txtDsl.Text
+        LabelUpdate()
     End Sub
 
     Private Sub btnUptLgn_Click(sender As Object, e As EventArgs) Handles btnUptLgn.Click
-        txtUsr.Text = UpdatedUsername
-        txtPsw.Text = UpdatedPassword
+        UpdatedUsername = txtUsr.Text
+        UpdatedPassword = txtPsw.Text
+        LabelUpdate()
+        MsgBox("Updated the Password." & vbCrLf & "The new Username is: " & UpdatedUsername & vbCrLf & "The new Password is: " & UpdatedPassword)
     End Sub
 
     Private Sub Dashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim Top As Decimal
-        Dim Bottom As Decimal
-        Top = Game.PetrolCost
-        Bottom = Top / 100
-        lblPtlCst.Text = "£" & Bottom & " /L"
-        Top = Game.DieselCost
-        Bottom = Top / 100
-        lblDslCst.Text = "£" & Bottom & " /L"
+        LabelUpdate()
     End Sub
+
+    Private Sub LabelUpdate()
+        If Dashboard.UpdatedUsername = "" Then
+            lblUsrVal.Text = "123" 'The defualt Username
+        Else
+            lblUsrVal.Text = Dashboard.UpdatedUsername
+        End If
+
+        If Dashboard.UpdatedPassword = "" Then
+            lblPwdVal.Text = "123" 'The defualt Password
+        Else
+            lblPwdVal.Text = Dashboard.UpdatedPassword
+        End If
+
+        If Dashboard.UpdatedPetrol = 0 Then
+            lblPtlCst.Text = "£" & Maths(Game.PetrolCost) & " /L" 'The defualt Petrol Cost
+        Else
+            lblPtlCst.Text = "£" & Maths(Dashboard.UpdatedPetrol) & " /L"
+        End If
+
+        If Dashboard.UpdatedDiesel = 0 Then
+            lblDslCst.Text = "£" & Maths(Game.DieselCost) & " /L" 'The defualt Diesel Cost 
+        Else
+            lblDslCst.Text = "£" & Maths(Dashboard.UpdatedPetrol) & " /L"
+        End If
+    End Sub
+
+    Private Function Maths(ByVal Cost As Int32)
+        Dim Output As Decimal
+        Output = Cost / 100
+        Return (Output)
+    End Function
 End Class

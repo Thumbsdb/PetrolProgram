@@ -38,6 +38,11 @@ Partial Class Dashboard
         lblPtlCst = New Label()
         lbl2 = New Label()
         lblDslCst = New Label()
+        lblPwdVal = New Label()
+        Label3 = New Label()
+        lblUsrVal = New Label()
+        Label5 = New Label()
+        Label6 = New Label()
         SuspendLayout()
         ' 
         ' txtPtl
@@ -74,7 +79,7 @@ Partial Class Dashboard
         ' 
         ' btnMenu
         ' 
-        btnMenu.Location = New Point(12, 78)
+        btnMenu.Location = New Point(12, 111)
         btnMenu.Name = "btnMenu"
         btnMenu.Size = New Size(75, 23)
         btnMenu.TabIndex = 4
@@ -84,7 +89,7 @@ Partial Class Dashboard
         ' lblPsw
         ' 
         lblPsw.AutoSize = True
-        lblPsw.Location = New Point(118, 125)
+        lblPsw.Location = New Point(118, 64)
         lblPsw.Name = "lblPsw"
         lblPsw.Size = New Size(57, 15)
         lblPsw.TabIndex = 8
@@ -93,7 +98,7 @@ Partial Class Dashboard
         ' lblUsr
         ' 
         lblUsr.AutoSize = True
-        lblUsr.Location = New Point(12, 125)
+        lblUsr.Location = New Point(12, 64)
         lblUsr.Name = "lblUsr"
         lblUsr.Size = New Size(60, 15)
         lblUsr.TabIndex = 7
@@ -101,14 +106,14 @@ Partial Class Dashboard
         ' 
         ' txtPsw
         ' 
-        txtPsw.Location = New Point(118, 143)
+        txtPsw.Location = New Point(118, 82)
         txtPsw.Name = "txtPsw"
         txtPsw.Size = New Size(100, 23)
         txtPsw.TabIndex = 6
         ' 
         ' txtUsr
         ' 
-        txtUsr.Location = New Point(12, 143)
+        txtUsr.Location = New Point(12, 82)
         txtUsr.Name = "txtUsr"
         txtUsr.Size = New Size(100, 23)
         txtUsr.TabIndex = 5
@@ -124,7 +129,7 @@ Partial Class Dashboard
         ' 
         ' btnUptLgn
         ' 
-        btnUptLgn.Location = New Point(224, 142)
+        btnUptLgn.Location = New Point(224, 81)
         btnUptLgn.Name = "btnUptLgn"
         btnUptLgn.Size = New Size(75, 23)
         btnUptLgn.TabIndex = 10
@@ -176,11 +181,61 @@ Partial Class Dashboard
         lblDslCst.TabIndex = 15
         lblDslCst.Text = "Label5"
         ' 
+        ' lblPwdVal
+        ' 
+        lblPwdVal.AutoSize = True
+        lblPwdVal.Location = New Point(395, 122)
+        lblPwdVal.Name = "lblPwdVal"
+        lblPwdVal.Size = New Size(41, 15)
+        lblPwdVal.TabIndex = 20
+        lblPwdVal.Text = "Label5"
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Location = New Point(324, 122)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(60, 15)
+        Label3.TabIndex = 19
+        Label3.Text = "Password:"
+        ' 
+        ' lblUsrVal
+        ' 
+        lblUsrVal.AutoSize = True
+        lblUsrVal.Location = New Point(395, 107)
+        lblUsrVal.Name = "lblUsrVal"
+        lblUsrVal.Size = New Size(41, 15)
+        lblUsrVal.TabIndex = 18
+        lblUsrVal.Text = "Label3"
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.Location = New Point(324, 107)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(63, 15)
+        Label5.TabIndex = 17
+        Label5.Text = "Username:"
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.Location = New Point(324, 85)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(201, 15)
+        Label6.TabIndex = 16
+        Label6.Text = "The Current Username and Passwprd"
+        ' 
         ' Dashboard
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 189)
+        ClientSize = New Size(539, 189)
+        Controls.Add(lblPwdVal)
+        Controls.Add(Label3)
+        Controls.Add(lblUsrVal)
+        Controls.Add(Label5)
+        Controls.Add(Label6)
         Controls.Add(lblDslCst)
         Controls.Add(lbl2)
         Controls.Add(lblPtlCst)
@@ -219,4 +274,9 @@ Partial Class Dashboard
     Friend WithEvents lblPtlCst As Label
     Friend WithEvents lbl2 As Label
     Friend WithEvents lblDslCst As Label
+    Friend WithEvents lblPwdVal As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents lblUsrVal As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label6 As Label
 End Class

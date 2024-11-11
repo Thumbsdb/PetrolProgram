@@ -1,6 +1,8 @@
 ﻿Public Class Dashboard
-    Public Shared UpdatedPetrol As Int32
-    Public Shared UpdatedDiesel As Int32
+    Public Shared UpdatedPetrol As Int16
+    Public Shared UpdatedDiesel As Int16
+    Public Shared UpdatedUsername As String = ""
+    Public Shared UpdatedPassword As String = ""
 
     Private Sub btnMenu_Click(sender As Object, e As EventArgs) Handles btnMenu.Click
         Menu.Show()
@@ -10,11 +12,11 @@
     Private Sub btnUptFul_Click(sender As Object, e As EventArgs) Handles btnUptFul.Click
         txtPtl.Text = UpdatedPetrol
         txtDsl.Text = UpdatedDiesel
-
     End Sub
 
     Private Sub btnUptLgn_Click(sender As Object, e As EventArgs) Handles btnUptLgn.Click
-
+        txtUsr.Text = UpdatedUsername
+        txtPsw.Text = UpdatedPassword
     End Sub
 
     Private Sub Dashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -26,9 +28,5 @@
         Top = Game.DieselCost
         Bottom = Top / 100
         lblDslCst.Text = "£" & Bottom & " /L"
-    End Sub
-
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles lblPtlCst.Click
-
     End Sub
 End Class

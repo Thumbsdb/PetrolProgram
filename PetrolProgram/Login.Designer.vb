@@ -28,6 +28,7 @@ Partial Class Login
         txtUsr = New TextBox()
         txtPsw = New TextBox()
         btnLogin = New Button()
+        btnExit = New Button()
         SuspendLayout()
         ' 
         ' lblUsr
@@ -50,7 +51,7 @@ Partial Class Login
         ' 
         ' btnMenu
         ' 
-        btnMenu.Location = New Point(27, 78)
+        btnMenu.Location = New Point(12, 78)
         btnMenu.Name = "btnMenu"
         btnMenu.Size = New Size(75, 23)
         btnMenu.TabIndex = 4
@@ -61,31 +62,40 @@ Partial Class Login
         ' 
         txtUsr.Location = New Point(90, 12)
         txtUsr.Name = "txtUsr"
-        txtUsr.Size = New Size(159, 23)
+        txtUsr.Size = New Size(165, 23)
         txtUsr.TabIndex = 1
         ' 
         ' txtPsw
         ' 
         txtPsw.Location = New Point(90, 49)
         txtPsw.Name = "txtPsw"
-        txtPsw.PasswordChar = "*"c
-        txtPsw.Size = New Size(159, 23)
+        txtPsw.Size = New Size(165, 23)
         txtPsw.TabIndex = 2
         ' 
         ' btnLogin
         ' 
-        btnLogin.Location = New Point(108, 78)
+        btnLogin.Location = New Point(174, 77)
         btnLogin.Name = "btnLogin"
-        btnLogin.Size = New Size(141, 23)
+        btnLogin.Size = New Size(81, 23)
         btnLogin.TabIndex = 3
         btnLogin.Text = "Login"
         btnLogin.UseVisualStyleBackColor = True
+        ' 
+        ' btnExit
+        ' 
+        btnExit.Location = New Point(93, 77)
+        btnExit.Name = "btnExit"
+        btnExit.Size = New Size(75, 23)
+        btnExit.TabIndex = 5
+        btnExit.Text = "Exit"
+        btnExit.UseVisualStyleBackColor = True
         ' 
         ' Login
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(261, 112)
+        ClientSize = New Size(268, 112)
+        Controls.Add(btnExit)
         Controls.Add(btnLogin)
         Controls.Add(txtPsw)
         Controls.Add(txtUsr)
@@ -104,4 +114,5 @@ Partial Class Login
     Friend WithEvents txtUsr As TextBox
     Friend WithEvents txtPsw As TextBox
     Friend WithEvents btnLogin As Button
+    Friend WithEvents btnExit As Button
 End Class

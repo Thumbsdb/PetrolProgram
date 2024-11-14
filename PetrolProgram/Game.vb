@@ -5,6 +5,7 @@ Public Class Game
     Public bMouseDown As Boolean
     Public Shared PetrolCost As Int16 = 129
     Public Shared DieselCost As Int16 = 158
+    Public Shared Cost As Int32
     Dim FuelCost As Decimal
     Dim Dec As Decimal
 
@@ -50,7 +51,7 @@ Public Class Game
         Return ("£" & Output & " /L")
     End Function
 
-    Private Function Cost(ByRef Counter As Int32)
+    Private Function FuelCostCounter(ByRef Counter As Int32)
         If rdoPetrol.Checked Then
             Cost = Counter * PetrolCost
             lblCstNum.Text = Maths(Cost)
@@ -72,7 +73,7 @@ Public Class Game
                                    If bMouseDown = True Then
                                        Counter += 1
                                        lblFulNum.Text = Counter & " /L"
-                                       Cost(Counter)
+                                       FuelCostCounter(Counter)
                                        'System.Diagnostics.Debug.WriteLine(Counter)
                                    Else
                                        Timer.Stop()

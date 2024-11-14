@@ -22,9 +22,65 @@ Partial Class Checkout
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "Checkout"
+        Label1 = New Label()
+        Label2 = New Label()
+        lblLtrNum = New Label()
+        lblFulNum = New Label()
+        SuspendLayout()
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Location = New Point(185, 125)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(59, 15)
+        Label1.TabIndex = 0
+        Label1.Text = "Fuel Cost "
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Location = New Point(203, 94)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(35, 15)
+        Label2.TabIndex = 1
+        Label2.Text = "Liters"
+        ' 
+        ' lblLtrNum
+        ' 
+        lblLtrNum.AutoSize = True
+        lblLtrNum.Location = New Point(261, 94)
+        lblLtrNum.Name = "lblLtrNum"
+        lblLtrNum.Size = New Size(61, 15)
+        lblLtrNum.TabIndex = 2
+        lblLtrNum.Text = "lblLtrNum"
+        ' 
+        ' lblFulNum
+        ' 
+        lblFulNum.AutoSize = True
+        lblFulNum.Location = New Point(261, 125)
+        lblFulNum.Name = "lblFulNum"
+        lblFulNum.Size = New Size(63, 15)
+        lblFulNum.TabIndex = 3
+        lblFulNum.Text = "lblFulNum"
+        ' 
+        ' Checkout
+        ' 
+        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(800, 450)
+        Controls.Add(lblFulNum)
+        Controls.Add(lblLtrNum)
+        Controls.Add(Label2)
+        Controls.Add(Label1)
+        Name = "Checkout"
+        Text = "Checkout"
+        ResumeLayout(False)
+        PerformLayout()
     End Sub
+
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents lblLtrNum As Label
+    Friend WithEvents lblFulNum As Label
 End Class

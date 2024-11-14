@@ -3,27 +3,11 @@
 Public Class Game
     Public Counter As Int16 = 0
     Public bMouseDown As Boolean
-    Public Shared PetrolCost As Int16 = 1129
-    Public Shared DieselCost As Int16 = 1158
+    Public Shared PetrolCost As Int16 = 129
+    Public Shared DieselCost As Int16 = 158
     Dim FuelCost As Decimal
     Dim Dec As Decimal
-    Private Sub Counting()
-        Dim Timer As New Timer()
-        Timer.Interval = 1
-        ' I have no clue what this does
-        AddHandler Timer.Tick, Sub(sender, e)
-                                   ' This checks wither or not the mouse is actually being held down and if True increase the timer by 100, if not sDec timer
-                                   If bMouseDown = True Then
-                                       Counter += 10
-                                       lblFulNum.Text = Counter
-                                       System.Diagnostics.Debug.WriteLine(Counter)
-                                   Else
-                                       Timer.Stop()
-                                   End If
-                               End Sub
-        ' Starts timer here because aids
-        Timer.Start()
-    End Sub
+
 
     Private Sub btnFul_MouseDown(sender As Object, e As MouseEventArgs) Handles btnFul.MouseDown
         If e.Button = MouseButtons.Left Then
@@ -37,17 +21,6 @@ Public Class Game
             bMouseDown = False
         End If
 
-    End Sub
-
-    Private Sub btnFul_Click(sender As Object, e As EventArgs) Handles btnFul.Click
-        'Generats a random Int number form 1 - 9999 and then converts to a float so that it displays at $99.99
-        'We do this becuse it meanse when calucalting we don't do floating arithmetic and do int arithmetic
-        'Dim upperbound As Integer = 9999
-        'Dim lowerbound As Integer = 1
-        'Dim ram As Int32
-        'ram = Int((upperbound - lowerbound + 1) * Rnd() + lowerbound)
-        'PetrolCost = CDec(ram)
-        'lblPtlNum.Text = PetrolCost
     End Sub
 
     Private Sub btnMenu_Click(sender As Object, e As EventArgs) Handles btnMnu.Click
@@ -70,9 +43,42 @@ Public Class Game
         End If
     End Sub
 
+    'Custom Sub & Functions
     Private Function Maths(ByVal Cost As Decimal)
         Dim Output As Decimal
         Output = Cost / 100
         Return ("£" & Output & " /L")
     End Function
+
+    Private Function Cost(ByRef Counter As Int32)
+        If rdoPetrol.Checked Then
+            Cost = Counter * PetrolCost
+            lblCstNum.Text = Maths(Cost)
+        End If
+
+        If rdoDiesel.Checked Then
+            Cost = Counter * DieselCost
+            lblCstNum.Text = Maths(Cost)
+        End If
+        Return (Cost)
+    End Function
+
+    Private Sub Counting()
+        Dim Timer As New Timer()
+        Timer.Interval = 61
+        ' I have no clue what this does
+        AddHandler Timer.Tick, Sub(sender, e)
+                                   ' This checks wither or not the mouse is actually being held down and if True increase the timer by 100, if not sDec timer
+                                   If bMouseDown = True Then
+                                       Counter += 1
+                                       lblFulNum.Text = Counter & " /L"
+                                       Cost(Counter)
+                                       'System.Diagnostics.Debug.WriteLine(Counter)
+                                   Else
+                                       Timer.Stop()
+                                   End If
+                               End Sub
+        ' Starts timer here because aids
+        Timer.Start()
+    End Sub
 End Class

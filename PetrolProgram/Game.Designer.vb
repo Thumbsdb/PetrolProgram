@@ -35,8 +35,8 @@ Partial Class Game
         lblPtlNum = New Label()
         lblFulNum = New Label()
         lblCstNum = New Label()
-        RadioButton1 = New RadioButton()
-        RadioButton2 = New RadioButton()
+        rdoDiesel = New RadioButton()
+        rdoPetrol = New RadioButton()
         SuspendLayout()
         ' 
         ' btnMnu
@@ -138,35 +138,35 @@ Partial Class Game
         lblCstNum.TabIndex = 12
         lblCstNum.Text = "lblCstNum"
         ' 
-        ' RadioButton1
+        ' rdoDiesel
         ' 
-        RadioButton1.AutoSize = True
-        RadioButton1.Location = New Point(347, 65)
-        RadioButton1.Name = "RadioButton1"
-        RadioButton1.Size = New Size(97, 19)
-        RadioButton1.TabIndex = 13
-        RadioButton1.TabStop = True
-        RadioButton1.Text = "RadioButton1"
-        RadioButton1.UseVisualStyleBackColor = True
+        rdoDiesel.AutoSize = True
+        rdoDiesel.Location = New Point(347, 65)
+        rdoDiesel.Name = "rdoDiesel"
+        rdoDiesel.Size = New Size(105, 19)
+        rdoDiesel.TabIndex = 13
+        rdoDiesel.TabStop = True
+        rdoDiesel.Text = "Click For Diesel"
+        rdoDiesel.UseVisualStyleBackColor = True
         ' 
-        ' RadioButton2
+        ' rdoPetrol
         ' 
-        RadioButton2.AutoSize = True
-        RadioButton2.Location = New Point(347, 29)
-        RadioButton2.Name = "RadioButton2"
-        RadioButton2.Size = New Size(97, 19)
-        RadioButton2.TabIndex = 14
-        RadioButton2.TabStop = True
-        RadioButton2.Text = "RadioButton2"
-        RadioButton2.UseVisualStyleBackColor = True
+        rdoPetrol.AutoSize = True
+        rdoPetrol.Location = New Point(347, 29)
+        rdoPetrol.Name = "rdoPetrol"
+        rdoPetrol.Size = New Size(105, 19)
+        rdoPetrol.TabIndex = 14
+        rdoPetrol.TabStop = True
+        rdoPetrol.Text = "Click For Petrol"
+        rdoPetrol.UseVisualStyleBackColor = True
         ' 
         ' Game
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
-        Controls.Add(RadioButton2)
-        Controls.Add(RadioButton1)
+        Controls.Add(rdoPetrol)
+        Controls.Add(rdoDiesel)
         Controls.Add(lblCstNum)
         Controls.Add(lblFulNum)
         Controls.Add(lblPtlNum)
@@ -196,6 +196,6 @@ Partial Class Game
     Friend WithEvents lblPtlNum As Label
     Friend WithEvents lblFulNum As Label
     Friend WithEvents lblCstNum As Label
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
+    Friend WithEvents rdoDiesel As RadioButton
+    Friend WithEvents rdoPetrol As RadioButton
 End Class

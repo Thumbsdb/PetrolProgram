@@ -87,7 +87,7 @@ Partial Class Login
         btnExit.Name = "btnExit"
         btnExit.Size = New Size(75, 23)
         btnExit.TabIndex = 5
-        btnExit.Text = "Exit"
+        btnExit.Text = "Clear"
         btnExit.UseVisualStyleBackColor = True
         ' 
         ' Login

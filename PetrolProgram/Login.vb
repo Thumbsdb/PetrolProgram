@@ -46,6 +46,7 @@
 
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
-        Application.Exit()
+        txtPsw.Text = ""
+        txtUsr.Text = ""
     End Sub
 End Class

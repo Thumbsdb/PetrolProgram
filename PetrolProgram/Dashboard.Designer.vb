@@ -43,6 +43,9 @@ Partial Class Dashboard
         lblUsrVal = New Label()
         Label5 = New Label()
         Label6 = New Label()
+        Button1 = New Button()
+        Button2 = New Button()
+        Button3 = New Button()
         SuspendLayout()
         ' 
         ' txtPtl
@@ -226,11 +229,41 @@ Partial Class Dashboard
         Label6.TabIndex = 16
         Label6.Text = "The Current Username and Passwprd"
         ' 
+        ' Button1
+        ' 
+        Button1.Location = New Point(12, 154)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(75, 23)
+        Button1.TabIndex = 21
+        Button1.Text = "Button1"
+        Button1.UseVisualStyleBackColor = True
+        ' 
+        ' Button2
+        ' 
+        Button2.Location = New Point(93, 154)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(75, 23)
+        Button2.TabIndex = 22
+        Button2.Text = "Button2"
+        Button2.UseVisualStyleBackColor = True
+        ' 
+        ' Button3
+        ' 
+        Button3.Location = New Point(174, 154)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(75, 23)
+        Button3.TabIndex = 23
+        Button3.Text = "Button3"
+        Button3.UseVisualStyleBackColor = True
+        ' 
         ' Dashboard
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(539, 189)
+        Controls.Add(Button3)
+        Controls.Add(Button2)
+        Controls.Add(Button1)
         Controls.Add(lblPwdVal)
         Controls.Add(Label3)
         Controls.Add(lblUsrVal)
@@ -279,4 +312,7 @@ Partial Class Dashboard
     Friend WithEvents lblUsrVal As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
 End Class

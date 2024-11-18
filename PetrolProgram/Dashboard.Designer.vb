@@ -43,9 +43,9 @@ Partial Class Dashboard
         lblUsrVal = New Label()
         Label5 = New Label()
         Label6 = New Label()
-        Button1 = New Button()
-        Button2 = New Button()
-        Button3 = New Button()
+        btnFulChge = New Button()
+        btnLgnChge = New Button()
+        btnRpt = New Button()
         SuspendLayout()
         ' 
         ' txtPtl
@@ -229,41 +229,41 @@ Partial Class Dashboard
         Label6.TabIndex = 16
         Label6.Text = "The Current Username and Passwprd"
         ' 
-        ' Button1
+        ' btnFulChge
         ' 
-        Button1.Location = New Point(12, 154)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(75, 23)
-        Button1.TabIndex = 21
-        Button1.Text = "Button1"
-        Button1.UseVisualStyleBackColor = True
+        btnFulChge.Location = New Point(12, 154)
+        btnFulChge.Name = "btnFulChge"
+        btnFulChge.Size = New Size(85, 23)
+        btnFulChge.TabIndex = 21
+        btnFulChge.Text = "Fuel Change"
+        btnFulChge.UseVisualStyleBackColor = True
         ' 
-        ' Button2
+        ' btnLgnChge
         ' 
-        Button2.Location = New Point(93, 154)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(75, 23)
-        Button2.TabIndex = 22
-        Button2.Text = "Button2"
-        Button2.UseVisualStyleBackColor = True
+        btnLgnChge.Location = New Point(100, 154)
+        btnLgnChge.Name = "btnLgnChge"
+        btnLgnChge.Size = New Size(93, 23)
+        btnLgnChge.TabIndex = 22
+        btnLgnChge.Text = "Login Change"
+        btnLgnChge.UseVisualStyleBackColor = True
         ' 
-        ' Button3
+        ' btnRpt
         ' 
-        Button3.Location = New Point(174, 154)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(75, 23)
-        Button3.TabIndex = 23
-        Button3.Text = "Button3"
-        Button3.UseVisualStyleBackColor = True
+        btnRpt.Location = New Point(199, 154)
+        btnRpt.Name = "btnRpt"
+        btnRpt.Size = New Size(75, 23)
+        btnRpt.TabIndex = 23
+        btnRpt.Text = "Reports"
+        btnRpt.UseVisualStyleBackColor = True
         ' 
         ' Dashboard
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(539, 189)
-        Controls.Add(Button3)
-        Controls.Add(Button2)
-        Controls.Add(Button1)
+        Controls.Add(btnRpt)
+        Controls.Add(btnLgnChge)
+        Controls.Add(btnFulChge)
         Controls.Add(lblPwdVal)
         Controls.Add(Label3)
         Controls.Add(lblUsrVal)
@@ -312,7 +312,7 @@ Partial Class Dashboard
     Friend WithEvents lblUsrVal As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents btnFulChge As Button
+    Friend WithEvents btnLgnChge As Button
+    Friend WithEvents btnRpt As Button
 End Class

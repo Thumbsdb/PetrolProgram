@@ -59,4 +59,16 @@ Public Class Dashboard
         Output = Cost / 100
         Return (Output)
     End Function
+
+    Private Sub btnFulChge_Click(sender As Object, e As EventArgs) Handles btnFulChge.Click
+        FuelChange.Show()
+    End Sub
+
+    Private Sub btnLgnChge_Click(sender As Object, e As EventArgs) Handles btnLgnChge.Click
+        PasswordChange.Show()
+    End Sub
+
+    Private Sub btnRpt_Click(sender As Object, e As EventArgs) Handles btnRpt.Click
+        Report.Show()
+    End Sub
 End Class

@@ -1,4 +1,6 @@
 ﻿Imports System.Reflection.Emit
+Imports System.Text
+Imports Microsoft.VisualBasic.Devices
 
 Public Class Game
     Public Counter As Int16 = 0
@@ -6,14 +8,19 @@ Public Class Game
     Public Shared PetrolCost As Int16 = 129
     Public Shared DieselCost As Int16 = 158
     Public Shared Cost As Int32
-    Dim FuelCost As Decimal
+    Public Shared FuelCost As Decimal
     Dim Dec As Decimal
 
-
     Private Sub btnFul_MouseDown(sender As Object, e As MouseEventArgs) Handles btnFul.MouseDown
-        If e.Button = MouseButtons.Left Then
-            bMouseDown = True
-            Counting()
+        If rdoDiesel.Checked = False And rdoPetrol.Checked = False Then
+            MsgBox("Please select a fuel type")
+        Else
+            rdoPetrol.Enabled = False
+            rdoDiesel.Enabled = False
+            If e.Button = MouseButtons.Left Then
+                bMouseDown = True
+                Counting()
+            End If
         End If
     End Sub
 
@@ -21,7 +28,6 @@ Public Class Game
         If e.Button = MouseButtons.Left Then
             bMouseDown = False
         End If
-
     End Sub
 
     Private Sub btnMenu_Click(sender As Object, e As EventArgs) Handles btnMnu.Click
@@ -81,5 +87,10 @@ Public Class Game
                                End Sub
         ' Starts timer here because aids
         Timer.Start()
+    End Sub
+
+    Private Sub btnCut_Click(sender As Object, e As EventArgs) Handles btnCut.Click
+        Checkout.Show()
+        Me.Close()
     End Sub
 End Class

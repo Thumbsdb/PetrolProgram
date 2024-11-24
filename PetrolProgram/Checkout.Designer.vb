@@ -31,7 +31,7 @@ Partial Class Checkout
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(185, 125)
+        Label1.Location = New Point(18, 52)
         Label1.Name = "Label1"
         Label1.Size = New Size(59, 15)
         Label1.TabIndex = 0
@@ -40,7 +40,7 @@ Partial Class Checkout
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(203, 94)
+        Label2.Location = New Point(36, 21)
         Label2.Name = "Label2"
         Label2.Size = New Size(35, 15)
         Label2.TabIndex = 1
@@ -49,7 +49,7 @@ Partial Class Checkout
         ' lblLtrNum
         ' 
         lblLtrNum.AutoSize = True
-        lblLtrNum.Location = New Point(261, 94)
+        lblLtrNum.Location = New Point(94, 21)
         lblLtrNum.Name = "lblLtrNum"
         lblLtrNum.Size = New Size(61, 15)
         lblLtrNum.TabIndex = 2
@@ -58,7 +58,7 @@ Partial Class Checkout
         ' lblFulNum
         ' 
         lblFulNum.AutoSize = True
-        lblFulNum.Location = New Point(261, 125)
+        lblFulNum.Location = New Point(94, 52)
         lblFulNum.Name = "lblFulNum"
         lblFulNum.Size = New Size(63, 15)
         lblFulNum.TabIndex = 3

@@ -89,18 +89,18 @@ Partial Class Game
         lblDsl.AutoSize = True
         lblDsl.Location = New Point(179, 57)
         lblDsl.Name = "lblDsl"
-        lblDsl.Size = New Size(47, 15)
+        lblDsl.Size = New Size(38, 15)
         lblDsl.TabIndex = 8
-        lblDsl.Text = "Diseal £"
+        lblDsl.Text = "Diesel"
         ' 
         ' lblPtl
         ' 
         lblPtl.AutoSize = True
         lblPtl.Location = New Point(179, 25)
         lblPtl.Name = "lblPtl"
-        lblPtl.Size = New Size(47, 15)
+        lblPtl.Size = New Size(38, 15)
         lblPtl.TabIndex = 7
-        lblPtl.Text = "Petrol £"
+        lblPtl.Text = "Petrol"
         ' 
         ' lblDslNum
         ' 
@@ -125,18 +125,18 @@ Partial Class Game
         lblFulNum.AutoSize = True
         lblFulNum.Location = New Point(69, 25)
         lblFulNum.Name = "lblFulNum"
-        lblFulNum.Size = New Size(13, 15)
+        lblFulNum.Size = New Size(27, 15)
         lblFulNum.TabIndex = 11
-        lblFulNum.Text = "0"
+        lblFulNum.Text = "0 /L"
         ' 
         ' lblCstNum
         ' 
         lblCstNum.AutoSize = True
         lblCstNum.Location = New Point(69, 57)
         lblCstNum.Name = "lblCstNum"
-        lblCstNum.Size = New Size(64, 15)
+        lblCstNum.Size = New Size(19, 15)
         lblCstNum.TabIndex = 12
-        lblCstNum.Text = "lblCstNum"
+        lblCstNum.Text = "£0"
         ' 
         ' rdoDiesel
         ' 

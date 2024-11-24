@@ -32,7 +32,7 @@ Partial Class Menu
         ' 
         ' btnExt
         ' 
-        btnExt.Location = New Point(30, 99)
+        btnExt.Location = New Point(12, 155)
         btnExt.Name = "btnExt"
         btnExt.Size = New Size(75, 23)
         btnExt.TabIndex = 4
@@ -41,7 +41,7 @@ Partial Class Menu
         ' 
         ' btnLgn
         ' 
-        btnLgn.Location = New Point(30, 70)
+        btnLgn.Location = New Point(12, 126)
         btnLgn.Name = "btnLgn"
         btnLgn.Size = New Size(75, 23)
         btnLgn.TabIndex = 3
@@ -50,16 +50,18 @@ Partial Class Menu
         ' 
         ' btnStr
         ' 
-        btnStr.Location = New Point(30, 12)
+        btnStr.FlatStyle = FlatStyle.Popup
+        btnStr.Font = New Font("Candara", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnStr.Location = New Point(12, 43)
         btnStr.Name = "btnStr"
-        btnStr.Size = New Size(75, 23)
+        btnStr.Size = New Size(113, 48)
         btnStr.TabIndex = 1
         btnStr.Text = "Start"
         btnStr.UseVisualStyleBackColor = True
         ' 
         ' btnOpt
         ' 
-        btnOpt.Location = New Point(30, 41)
+        btnOpt.Location = New Point(12, 97)
         btnOpt.Name = "btnOpt"
         btnOpt.Size = New Size(75, 23)
         btnOpt.TabIndex = 2
@@ -69,7 +71,7 @@ Partial Class Menu
         ' lblTitle
         ' 
         lblTitle.AutoSize = True
-        lblTitle.Location = New Point(134, 16)
+        lblTitle.Location = New Point(319, 76)
         lblTitle.Name = "lblTitle"
         lblTitle.Size = New Size(107, 15)
         lblTitle.TabIndex = 4
@@ -77,7 +79,7 @@ Partial Class Menu
         ' 
         ' btnDebug
         ' 
-        btnDebug.Location = New Point(220, 136)
+        btnDebug.Location = New Point(12, 192)
         btnDebug.Name = "btnDebug"
         btnDebug.Size = New Size(75, 23)
         btnDebug.TabIndex = 5
@@ -88,7 +90,7 @@ Partial Class Menu
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(307, 171)
+        ClientSize = New Size(525, 411)
         Controls.Add(btnDebug)
         Controls.Add(lblTitle)
         Controls.Add(btnOpt)

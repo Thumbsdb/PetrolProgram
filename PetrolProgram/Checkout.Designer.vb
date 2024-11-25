@@ -26,6 +26,7 @@ Partial Class Checkout
         Label2 = New Label()
         lblLtrNum = New Label()
         lblFulNum = New Label()
+        btnMnu = New Button()
         SuspendLayout()
         ' 
         ' Label1
@@ -64,11 +65,21 @@ Partial Class Checkout
         lblFulNum.TabIndex = 3
         lblFulNum.Text = "lblFulNum"
         ' 
+        ' btnMnu
+        ' 
+        btnMnu.Location = New Point(17, 77)
+        btnMnu.Name = "btnMnu"
+        btnMnu.Size = New Size(75, 23)
+        btnMnu.TabIndex = 4
+        btnMnu.Text = "Menu"
+        btnMnu.UseVisualStyleBackColor = True
+        ' 
         ' Checkout
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(btnMnu)
         Controls.Add(lblFulNum)
         Controls.Add(lblLtrNum)
         Controls.Add(Label2)
@@ -83,4 +94,5 @@ Partial Class Checkout
     Friend WithEvents Label2 As Label
     Friend WithEvents lblLtrNum As Label
     Friend WithEvents lblFulNum As Label
+    Friend WithEvents btnMnu As Button
 End Class

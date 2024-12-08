@@ -63,9 +63,39 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property gas_pump_3971793_1920() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("gas-pump-3971793_1920", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property Greek_Empire() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Greek-Empire", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property istockphoto_1421951888_612x612() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("istockphoto-1421951888-612x612", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Texaco_petrol_station_Swanage_1170x780() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Texaco-petrol-station-Swanage-1170x780", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

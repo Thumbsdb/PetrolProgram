@@ -35,7 +35,7 @@ Public Class Game
     End Sub
 
     'Custom Sub & Functions
-    'Private Function Maths(ByVal Cost As Decimal)
+    'Private Function FuelPriceCalculator(ByVal Cost As Decimal)
     'Dim Output As Decimal
     '   Output = Cost / 100
     'Return ("£" & Output & " /L")
@@ -62,27 +62,27 @@ Public Class Game
     Private Function FuelCostCounter(ByRef Counter As Int32)
         If rdoPetrol.Checked Then
             FuelCost = Counter * PetrolCost
-            lblCstNum.Text = Maths(FuelCost)
+            lblCstNum.Text = FuelPriceCalculator(FuelCost)
         End If
 
         If rdoDiesel.Checked Then
             FuelCost = Counter * DieselCost
-            lblCstNum.Text = Maths(FuelCost)
+            lblCstNum.Text = FuelPriceCalculator(FuelCost)
         End If
         Return (FuelCost)
     End Function
     Private Sub Game_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If UpdatedPetrol > 0 Then
-            lblPtlNum.Text = Maths(UpdatedPetrol)
+            lblPtlNum.Text = FuelPriceCalculator(UpdatedPetrol)
         Else
-            lblPtlNum.Text = Maths(PetrolCost)
+            lblPtlNum.Text = FuelPriceCalculator(PetrolCost)
         End If
 
-        'Displaying the corrct number and if it's the Default Number do maths to have decimal
+        'Displaying the corrct number and if it's the Default Number do FuelPriceCalculator to have decimal
         If UpdatedDiesel > 0 Then
-            lblDslNum.Text = Maths(UpdatedDiesel)
+            lblDslNum.Text = FuelPriceCalculator(UpdatedDiesel)
         Else
-            lblDslNum.Text = Maths(DieselCost)
+            lblDslNum.Text = FuelPriceCalculator(DieselCost)
         End If
     End Sub
 

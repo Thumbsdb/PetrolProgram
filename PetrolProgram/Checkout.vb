@@ -2,7 +2,7 @@
 Public Class Checkout
     Private Sub Checkout_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblLtrNum.Text = FuelAmount & " /L"
-        lblFulNum.Text = Maths(FuelCost)
+        lblFulNum.Text = FuelPriceCalculator(FuelCost)
     End Sub
 
     Private Sub btnMnu_Click(sender As Object, e As EventArgs) Handles btnMnu.Click

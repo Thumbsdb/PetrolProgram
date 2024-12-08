@@ -7,6 +7,7 @@
     'Default Username and Password Values
     Public Shared Username As String
     Public Shared Password As String
+    Public Shared DefaultPswUsr As String = "123"
     'Variables for the new petrol cost and setting the default vaules to nothing
     Public Shared UpdatedPetrol As Int16 = 0
     Public Shared UpdatedDiesel As Int16 = 0
@@ -15,31 +16,31 @@
     Public Shared UpdatedPassword As String = ""
 
     'Funny Functions
-    Public Shared Function Maths(ByVal Cost As Decimal)
+    Public Shared Function FuelPriceCalculator(ByVal Cost As Decimal)
         Dim Output As Decimal
         Output = Cost / 100
         Return ("£" & Output & " /L")
     End Function
     Public Shared Sub LabelUpdate()
         If UpdatedPetrol = 0 Then
-            FuelChange.lblPtlCst.Text = Maths(PetrolCost) 'The defualt Petrol Cost
+            FuelChange.lblPtlCst.Text = FuelPriceCalculator(PetrolCost) 'The defualt Petrol Cost
         Else
-            FuelChange.lblPtlCst.Text = Maths(UpdatedPetrol)
+            FuelChange.lblPtlCst.Text = FuelPriceCalculator(UpdatedPetrol)
         End If
         If UpdatedDiesel = 0 Then
-            FuelChange.lblDslCst.Text = Maths(DieselCost) 'The defualt Diesel Cost 
+            FuelChange.lblDslCst.Text = FuelPriceCalculator(DieselCost) 'The defualt Diesel Cost 
         Else
-            FuelChange.lblDslCst.Text = Maths(UpdatedPetrol)
+            FuelChange.lblDslCst.Text = FuelPriceCalculator(UpdatedPetrol)
         End If
 
         If UpdatedUsername = "" Then
-            LoginChange.lblUsrVal.Text = "123" 'The defualt Username
+            LoginChange.lblUsrVal.Text = DefaultPswUsr 'The defualt Username
         Else
             LoginChange.lblUsrVal.Text = UpdatedUsername
         End If
 
         If UpdatedPassword = "" Then
-            LoginChange.lblPwdVal.Text = "123" 'The defualt Password
+            LoginChange.lblPwdVal.Text = DefaultPswUsr 'The defualt Password
         Else
             LoginChange.lblPwdVal.Text = UpdatedPassword
         End If

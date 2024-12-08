@@ -11,13 +11,13 @@ Public Class Login
         'This checks if the UpdatedX variables has anything in it and the sets it to Password for the login if not will set it to the default values of 123
         'This done on load to make sure the variables are set up correctly
         If UpdatedPassword = "" Then
-            Password = "123" 'The defualt Password
+            Password = DefaultPswUsr
         Else
             Password = UpdatedPassword
         End If
 
         If UpdatedUsername = "" Then
-            Username = "123" 'The defualt Username
+            Username = DefaultPswUsr
         Else
             Username = UpdatedUsername
         End If

@@ -6,7 +6,6 @@ Imports PetrolProgram.Controls
 Public Class Game
     Public bMouseDown As Boolean
 
-
     Private Sub btnCut_Click(sender As Object, e As EventArgs) Handles btnCut.Click
         Checkout.Show()
         Me.Close()

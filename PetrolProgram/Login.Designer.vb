@@ -69,6 +69,7 @@ Partial Class Login
         ' 
         txtPsw.Location = New Point(90, 49)
         txtPsw.Name = "txtPsw"
+        txtPsw.PasswordChar = "*"c
         txtPsw.Size = New Size(165, 23)
         txtPsw.TabIndex = 2
         ' 

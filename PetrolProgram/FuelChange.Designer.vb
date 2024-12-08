@@ -22,133 +22,146 @@ Partial Class FuelChange
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        lblDslCst = New Label()
+        lbl2 = New Label()
+        lblPtlCst = New Label()
+        lbl = New Label()
         Label1 = New Label()
+        btnUptFul = New Button()
+        lblDsl = New Label()
+        lblPtl = New Label()
+        txtDsl = New TextBox()
+        txtPtl = New TextBox()
         Label2 = New Label()
-        TextBox1 = New TextBox()
-        TextBox2 = New TextBox()
-        Button1 = New Button()
-        Label3 = New Label()
-        Label4 = New Label()
-        Label5 = New Label()
-        Label6 = New Label()
-        Label7 = New Label()
         SuspendLayout()
+        ' 
+        ' lblDslCst
+        ' 
+        lblDslCst.AutoSize = True
+        lblDslCst.Location = New Point(286, 64)
+        lblDslCst.Name = "lblDslCst"
+        lblDslCst.Size = New Size(53, 15)
+        lblDslCst.TabIndex = 25
+        lblDslCst.Text = "lblDslCst"
+        ' 
+        ' lbl2
+        ' 
+        lbl2.AutoSize = True
+        lbl2.Location = New Point(214, 64)
+        lbl2.Name = "lbl2"
+        lbl2.Size = New Size(65, 15)
+        lbl2.TabIndex = 24
+        lbl2.Text = "Diesel Cost"
+        ' 
+        ' lblPtlCst
+        ' 
+        lblPtlCst.AutoSize = True
+        lblPtlCst.Location = New Point(285, 33)
+        lblPtlCst.Name = "lblPtlCst"
+        lblPtlCst.Size = New Size(54, 15)
+        lblPtlCst.TabIndex = 23
+        lblPtlCst.Text = " lblPtlCst"
+        ' 
+        ' lbl
+        ' 
+        lbl.AutoSize = True
+        lbl.Location = New Point(214, 33)
+        lbl.Name = "lbl"
+        lbl.Size = New Size(65, 15)
+        lbl.TabIndex = 22
+        lbl.Text = "Petrol Cost"
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(40, 24)
+        Label1.Location = New Point(214, 9)
         Label1.Name = "Label1"
-        Label1.Size = New Size(63, 15)
-        Label1.TabIndex = 0
-        Label1.Text = "Petrol cost"
+        Label1.Size = New Size(203, 15)
+        Label1.TabIndex = 21
+        Label1.Text = "The Current Price of Petrol and Diesel"
+        ' 
+        ' btnUptFul
+        ' 
+        btnUptFul.Location = New Point(19, 90)
+        btnUptFul.Name = "btnUptFul"
+        btnUptFul.Size = New Size(75, 23)
+        btnUptFul.TabIndex = 20
+        btnUptFul.Text = "Update"
+        btnUptFul.UseVisualStyleBackColor = True
+        ' 
+        ' lblDsl
+        ' 
+        lblDsl.AutoSize = True
+        lblDsl.Location = New Point(19, 64)
+        lblDsl.Name = "lblDsl"
+        lblDsl.Size = New Size(65, 15)
+        lblDsl.TabIndex = 19
+        lblDsl.Text = "Diesel Cost"
+        ' 
+        ' lblPtl
+        ' 
+        lblPtl.AutoSize = True
+        lblPtl.Location = New Point(19, 33)
+        lblPtl.Name = "lblPtl"
+        lblPtl.Size = New Size(65, 15)
+        lblPtl.TabIndex = 18
+        lblPtl.Text = "Petrol Cost"
+        ' 
+        ' txtDsl
+        ' 
+        txtDsl.Location = New Point(90, 61)
+        txtDsl.Name = "txtDsl"
+        txtDsl.Size = New Size(100, 23)
+        txtDsl.TabIndex = 17
+        ' 
+        ' txtPtl
+        ' 
+        txtPtl.Location = New Point(90, 33)
+        txtPtl.Name = "txtPtl"
+        txtPtl.Size = New Size(100, 23)
+        txtPtl.TabIndex = 16
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(146, 24)
+        Label2.Location = New Point(19, 9)
         Label2.Name = "Label2"
-        Label2.Size = New Size(65, 15)
-        Label2.TabIndex = 1
-        Label2.Text = "Diesel Cost"
-        ' 
-        ' TextBox1
-        ' 
-        TextBox1.Location = New Point(40, 47)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(100, 23)
-        TextBox1.TabIndex = 2
-        ' 
-        ' TextBox2
-        ' 
-        TextBox2.Location = New Point(146, 47)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(100, 23)
-        TextBox2.TabIndex = 3
-        ' 
-        ' Button1
-        ' 
-        Button1.Location = New Point(40, 76)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(75, 23)
-        Button1.TabIndex = 4
-        Button1.Text = "Button1"
-        Button1.UseVisualStyleBackColor = True
-        ' 
-        ' Label3
-        ' 
-        Label3.AutoSize = True
-        Label3.Location = New Point(40, 117)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(41, 15)
-        Label3.TabIndex = 5
-        Label3.Text = "Label3"
-        ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.Location = New Point(40, 102)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(203, 15)
-        Label4.TabIndex = 6
-        Label4.Text = "The Current Price of Petrol and Diesel"
-        ' 
-        ' Label5
-        ' 
-        Label5.AutoSize = True
-        Label5.Location = New Point(40, 132)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(41, 15)
-        Label5.TabIndex = 7
-        Label5.Text = "Label5"
-        ' 
-        ' Label6
-        ' 
-        Label6.AutoSize = True
-        Label6.Location = New Point(132, 132)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(41, 15)
-        Label6.TabIndex = 8
-        Label6.Text = "Label6"
-        ' 
-        ' Label7
-        ' 
-        Label7.AutoSize = True
-        Label7.Location = New Point(132, 117)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(41, 15)
-        Label7.TabIndex = 9
-        Label7.Text = "Label7"
+        Label2.Size = New Size(104, 15)
+        Label2.TabIndex = 26
+        Label2.Text = "Fuel price changer"
         ' 
         ' FuelChange
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(367, 306)
-        Controls.Add(Label7)
-        Controls.Add(Label6)
-        Controls.Add(Label5)
-        Controls.Add(Label4)
-        Controls.Add(Label3)
-        Controls.Add(Button1)
-        Controls.Add(TextBox2)
-        Controls.Add(TextBox1)
+        ClientSize = New Size(428, 125)
         Controls.Add(Label2)
+        Controls.Add(lblDslCst)
+        Controls.Add(lbl2)
+        Controls.Add(lblPtlCst)
+        Controls.Add(lbl)
         Controls.Add(Label1)
+        Controls.Add(btnUptFul)
+        Controls.Add(lblDsl)
+        Controls.Add(lblPtl)
+        Controls.Add(txtDsl)
+        Controls.Add(txtPtl)
         Name = "FuelChange"
-        Text = "FuelChange"
+        StartPosition = FormStartPosition.CenterScreen
+        Text = " "
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
+    Friend WithEvents lblDslCst As Label
+    Friend WithEvents lbl2 As Label
+    Friend WithEvents lblPtlCst As Label
+    Friend WithEvents lbl As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents btnUptFul As Button
+    Friend WithEvents lblDsl As Label
+    Friend WithEvents lblPtl As Label
+    Friend WithEvents txtDsl As TextBox
+    Friend WithEvents txtPtl As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
 End Class

@@ -1,7 +1,7 @@
-﻿Public Class Login
+﻿Imports PetrolProgram.Controls
+Public Class Login
     'Fuck how long these are
-    Public Shared Username As String
-    Public Shared Password As String
+
     Private Sub btnMenu_Click(sender As Object, e As EventArgs) Handles btnMenu.Click
         Menu.Show()
         Me.Close()
@@ -10,16 +10,16 @@
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'This checks if the UpdatedX variables has anything in it and the sets it to Password for the login if not will set it to the default values of 123
         'This done on load to make sure the variables are set up correctly
-        If Dashboard.UpdatedPassword = "" Then
+        If UpdatedPassword = "" Then
             Password = "123" 'The defualt Password
         Else
-            Password = Dashboard.UpdatedPassword
+            Password = UpdatedPassword
         End If
 
-        If Dashboard.UpdatedUsername = "" Then
+        If UpdatedUsername = "" Then
             Username = "123" 'The defualt Username
         Else
-            Username = Dashboard.UpdatedUsername
+            Username = UpdatedUsername
         End If
     End Sub
 
@@ -30,7 +30,6 @@
         Dim strPass As String = txtPsw.Text
         System.Diagnostics.Debug.WriteLine(Password)
         If txtUsr.Text = Username And txtPsw.Text = Password Then
-
             Dashboard.Show()
             Me.Close()
         ElseIf strUser = Username Then
@@ -38,12 +37,10 @@
         ElseIf strPass = Password Then
             MsgBox("Your Username is incorrect", vbDefaultButton1, "Incorrect Username") 'This is here because this is when you the Password is correct but the username is incorrect
         Else
-            MsgBox("Your fucked")
+            MsgBox("Please enter a Username and Passwrod", vbDefaultButton1, "No Username and Password")
         End If
 
     End Sub
-
-
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         txtPsw.Text = ""

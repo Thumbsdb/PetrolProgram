@@ -5,8 +5,7 @@ Imports PetrolProgram.Controls
 
 Public Class Game
     Public bMouseDown As Boolean
-    Public Shared PetrolCost As Int16 = 129
-    Public Shared DieselCost As Int16 = 158
+
 
     Private Sub btnCut_Click(sender As Object, e As EventArgs) Handles btnCut.Click
         Checkout.Show()
@@ -74,15 +73,15 @@ Public Class Game
         Return (FuelCost)
     End Function
     Private Sub Game_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If Dashboard.UpdatedPetrol > 0 Then
-            lblPtlNum.Text = Maths(Dashboard.UpdatedPetrol)
+        If UpdatedPetrol > 0 Then
+            lblPtlNum.Text = Maths(UpdatedPetrol)
         Else
             lblPtlNum.Text = Maths(PetrolCost)
         End If
 
         'Displaying the corrct number and if it's the Default Number do maths to have decimal
-        If Dashboard.UpdatedDiesel > 0 Then
-            lblDslNum.Text = Maths(Dashboard.UpdatedDiesel)
+        If UpdatedDiesel > 0 Then
+            lblDslNum.Text = Maths(UpdatedDiesel)
         Else
             lblDslNum.Text = Maths(DieselCost)
         End If

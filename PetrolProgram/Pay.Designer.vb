@@ -52,6 +52,7 @@ Partial Class Pay
         Controls.Add(Label1)
         Controls.Add(btnMenu)
         Name = "Pay"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Pay"
         ResumeLayout(False)
         PerformLayout()

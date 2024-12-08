@@ -8,11 +8,6 @@
         Me.Close()
     End Sub
 
-    Private Sub btnDebug_Click(sender As Object, e As EventArgs)
-        Debug.Show
-        Close
-    End Sub
-
     Private Sub btnStr_Click(sender As Object, e As EventArgs) Handles btnStr.Click
         Game.Show()
         Me.Close()

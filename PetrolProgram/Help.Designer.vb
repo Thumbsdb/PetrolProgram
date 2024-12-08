@@ -22,9 +22,29 @@ Partial Class Help
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "Help"
+        btnMenu = New Button()
+        SuspendLayout()
+        ' 
+        ' btnMenu
+        ' 
+        btnMenu.Location = New Point(0, 0)
+        btnMenu.Name = "btnMenu"
+        btnMenu.Size = New Size(75, 23)
+        btnMenu.TabIndex = 0
+        btnMenu.Text = "Menu"
+        btnMenu.UseVisualStyleBackColor = True
+        ' 
+        ' Help
+        ' 
+        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(800, 450)
+        Controls.Add(btnMenu)
+        Name = "Help"
+        StartPosition = FormStartPosition.CenterScreen
+        Text = "Help"
+        ResumeLayout(False)
     End Sub
+
+    Friend WithEvents btnMenu As Button
 End Class

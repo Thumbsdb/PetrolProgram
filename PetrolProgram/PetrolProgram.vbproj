@@ -6,12 +6,12 @@
     <StartupObject>PetrolProgram.My.MyApplication</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
-    <ApplicationIcon>petrol-pump.ico</ApplicationIcon>
+    <ApplicationIcon>1486505255-filling-station-fuel-station-gas-station-petrol-pump-petrol-station_81418.ico</ApplicationIcon>
     <PackageIcon></PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="petrol-pump.ico" />
+    <Content Include="1486505255-filling-station-fuel-station-gas-station-petrol-pump-petrol-station_81418.ico" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,10 +1,12 @@
 ﻿Imports System.Reflection.Emit
 Imports System.Text
+Imports System.Xml
 Imports Microsoft.VisualBasic.Devices
 Imports PetrolProgram.Controls
 
 Public Class Game
     Public bMouseDown As Boolean
+
 
     Private Sub btnCut_Click(sender As Object, e As EventArgs) Handles btnCut.Click
         Checkout.Show()
@@ -23,6 +25,7 @@ Public Class Game
             rdoDiesel.Enabled = False
             If e.Button = MouseButtons.Left Then
                 bMouseDown = True
+                PicPump.BackColor = Color.LightGreen
                 Counting()
             End If
         End If
@@ -31,6 +34,7 @@ Public Class Game
     Private Sub btnFul_MouseUp(sender As Object, e As MouseEventArgs) Handles btnFul.MouseUp
         If e.Button = MouseButtons.Left Then
             bMouseDown = False
+            PicPump.BackColor = Color.RebeccaPurple
         End If
     End Sub
 
@@ -72,6 +76,7 @@ Public Class Game
         Return (FuelCost)
     End Function
     Private Sub Game_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         If UpdatedPetrol > 0 Then
             lblPtlNum.Text = FuelPriceCalculator(UpdatedPetrol)
         Else
@@ -85,5 +90,4 @@ Public Class Game
             lblDslNum.Text = FuelPriceCalculator(DieselCost)
         End If
     End Sub
-
 End Class

@@ -136,6 +136,7 @@ Partial Class LoginChange
         Controls.Add(txtPsw)
         Controls.Add(txtUsr)
         Name = "LoginChange"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "LoginChange"
         ResumeLayout(False)
         PerformLayout()

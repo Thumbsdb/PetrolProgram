@@ -13,13 +13,13 @@
         Timer1.Start()
     End Sub
 
-    Private Sub btnDebug_Click(sender As Object, e As EventArgs) Handles btnDebug.Click
-        Me.Hide()
-        Debug.Show()
-        Timer1.Stop()
-    End Sub
-
-    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+    Private Sub ProBar_Click(sender As Object, e As EventArgs) Handles ProBar.Click
 
     End Sub
+
+    'Private Sub btnDebug_Click(sender As Object, e As EventArgs)
+    ' Hide
+    'Debug.Show
+    'Timer1.Stop
+    'End Sub
 End Class

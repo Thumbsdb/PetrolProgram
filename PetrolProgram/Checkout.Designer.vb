@@ -27,6 +27,7 @@ Partial Class Checkout
         lblLtrNum = New Label()
         lblFulNum = New Label()
         btnMnu = New Button()
+        Button1 = New Button()
         SuspendLayout()
         ' 
         ' Label1
@@ -74,17 +75,28 @@ Partial Class Checkout
         btnMnu.Text = "Menu"
         btnMnu.UseVisualStyleBackColor = True
         ' 
+        ' Button1
+        ' 
+        Button1.Location = New Point(98, 77)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(75, 23)
+        Button1.TabIndex = 5
+        Button1.Text = "Pay"
+        Button1.UseVisualStyleBackColor = True
+        ' 
         ' Checkout
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(198, 120)
+        Controls.Add(Button1)
         Controls.Add(btnMnu)
         Controls.Add(lblFulNum)
         Controls.Add(lblLtrNum)
         Controls.Add(Label2)
         Controls.Add(Label1)
         Name = "Checkout"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Checkout"
         ResumeLayout(False)
         PerformLayout()
@@ -95,4 +107,5 @@ Partial Class Checkout
     Friend WithEvents lblLtrNum As Label
     Friend WithEvents lblFulNum As Label
     Friend WithEvents btnMnu As Button
+    Friend WithEvents Button1 As Button
 End Class

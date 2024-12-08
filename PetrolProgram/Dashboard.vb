@@ -1,4 +1,5 @@
 ﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel
+Imports PetrolProgram.Controls
 
 Public Class Dashboard
     Public Shared UpdatedPetrol As Int16
@@ -53,12 +54,6 @@ Public Class Dashboard
             lblDslCst.Text = "£" & Maths(Dashboard.UpdatedPetrol) & " /L"
         End If
     End Sub
-
-    Private Function Maths(ByVal Cost As Int32)
-        Dim Output As Decimal
-        Output = Cost / 100
-        Return (Output)
-    End Function
 
     Private Sub btnFulChge_Click(sender As Object, e As EventArgs) Handles btnFulChge.Click
         FuelChange.Show()

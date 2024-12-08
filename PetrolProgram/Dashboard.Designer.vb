@@ -286,6 +286,7 @@ Partial Class Dashboard
         Controls.Add(txtDsl)
         Controls.Add(txtPtl)
         Name = "Dashboard"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Dashboard"
         ResumeLayout(False)
         PerformLayout()

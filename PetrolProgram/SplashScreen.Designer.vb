@@ -24,55 +24,39 @@ Partial Class SplashScreen
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SplashScreen))
-        PictureBox1 = New PictureBox()
         Timer1 = New Timer(components)
-        PictureBox2 = New PictureBox()
-        btnDebug = New Button()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
+        Label1 = New Label()
+        ProBar = New ProgressBar()
         SuspendLayout()
-        ' 
-        ' PictureBox1
-        ' 
-        PictureBox1.BackgroundImage = My.Resources.Resources.Greek_Empire
-        resources.ApplyResources(PictureBox1, "PictureBox1")
-        PictureBox1.Name = "PictureBox1"
-        PictureBox1.TabStop = False
         ' 
         ' Timer1
         ' 
         ' 
-        ' PictureBox2
+        ' Label1
         ' 
-        PictureBox2.BackgroundImage = My.Resources.Resources.Greek_Empire
-        resources.ApplyResources(PictureBox2, "PictureBox2")
-        PictureBox2.Name = "PictureBox2"
-        PictureBox2.TabStop = False
+        resources.ApplyResources(Label1, "Label1")
+        Label1.BackColor = Color.Transparent
+        Label1.Name = "Label1"
         ' 
-        ' btnDebug
+        ' ProBar
         ' 
-        resources.ApplyResources(btnDebug, "btnDebug")
-        btnDebug.Name = "btnDebug"
-        btnDebug.UseVisualStyleBackColor = True
+        resources.ApplyResources(ProBar, "ProBar")
+        ProBar.Name = "ProBar"
         ' 
         ' SplashScreen
         ' 
         resources.ApplyResources(Me, "$this")
         AutoScaleMode = AutoScaleMode.Font
         ControlBox = False
-        Controls.Add(btnDebug)
-        Controls.Add(PictureBox2)
-        Controls.Add(PictureBox1)
+        Controls.Add(ProBar)
+        Controls.Add(Label1)
         FormBorderStyle = FormBorderStyle.None
         Name = "SplashScreen"
-        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
+        PerformLayout()
     End Sub
-
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Timer1 As Timer
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents btnDebug As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents ProBar As ProgressBar
 
 End Class

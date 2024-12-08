@@ -37,11 +37,13 @@ Partial Class Game
         lblCstNum = New Label()
         rdoDiesel = New RadioButton()
         rdoPetrol = New RadioButton()
+        PictureBox1 = New PictureBox()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' btnMnu
         ' 
-        btnMnu.Location = New Point(22, 131)
+        btnMnu.Location = New Point(214, 121)
         btnMnu.Name = "btnMnu"
         btnMnu.Size = New Size(75, 23)
         btnMnu.TabIndex = 0
@@ -50,16 +52,16 @@ Partial Class Game
         ' 
         ' btnFul
         ' 
-        btnFul.Location = New Point(103, 131)
+        btnFul.Location = New Point(295, 121)
         btnFul.Name = "btnFul"
-        btnFul.Size = New Size(93, 23)
+        btnFul.Size = New Size(111, 23)
         btnFul.TabIndex = 1
         btnFul.Text = "Start Fueling"
         btnFul.UseVisualStyleBackColor = True
         ' 
         ' btnCut
         ' 
-        btnCut.Location = New Point(202, 131)
+        btnCut.Location = New Point(412, 121)
         btnCut.Name = "btnCut"
         btnCut.Size = New Size(75, 23)
         btnCut.TabIndex = 2
@@ -69,7 +71,7 @@ Partial Class Game
         ' lblFul
         ' 
         lblFul.AutoSize = True
-        lblFul.Location = New Point(22, 25)
+        lblFul.Location = New Point(214, 15)
         lblFul.Name = "lblFul"
         lblFul.Size = New Size(29, 15)
         lblFul.TabIndex = 3
@@ -78,7 +80,7 @@ Partial Class Game
         ' lblCst
         ' 
         lblCst.AutoSize = True
-        lblCst.Location = New Point(22, 57)
+        lblCst.Location = New Point(214, 47)
         lblCst.Name = "lblCst"
         lblCst.Size = New Size(31, 15)
         lblCst.TabIndex = 4
@@ -87,7 +89,7 @@ Partial Class Game
         ' lblDsl
         ' 
         lblDsl.AutoSize = True
-        lblDsl.Location = New Point(179, 57)
+        lblDsl.Location = New Point(371, 47)
         lblDsl.Name = "lblDsl"
         lblDsl.Size = New Size(38, 15)
         lblDsl.TabIndex = 8
@@ -96,7 +98,7 @@ Partial Class Game
         ' lblPtl
         ' 
         lblPtl.AutoSize = True
-        lblPtl.Location = New Point(179, 25)
+        lblPtl.Location = New Point(371, 15)
         lblPtl.Name = "lblPtl"
         lblPtl.Size = New Size(38, 15)
         lblPtl.TabIndex = 7
@@ -105,7 +107,7 @@ Partial Class Game
         ' lblDslNum
         ' 
         lblDslNum.AutoSize = True
-        lblDslNum.Location = New Point(232, 57)
+        lblDslNum.Location = New Point(424, 47)
         lblDslNum.Name = "lblDslNum"
         lblDslNum.Size = New Size(63, 15)
         lblDslNum.TabIndex = 9
@@ -114,7 +116,7 @@ Partial Class Game
         ' lblPtlNum
         ' 
         lblPtlNum.AutoSize = True
-        lblPtlNum.Location = New Point(232, 25)
+        lblPtlNum.Location = New Point(424, 15)
         lblPtlNum.Name = "lblPtlNum"
         lblPtlNum.Size = New Size(61, 15)
         lblPtlNum.TabIndex = 10
@@ -123,7 +125,7 @@ Partial Class Game
         ' lblFulNum
         ' 
         lblFulNum.AutoSize = True
-        lblFulNum.Location = New Point(69, 25)
+        lblFulNum.Location = New Point(261, 15)
         lblFulNum.Name = "lblFulNum"
         lblFulNum.Size = New Size(27, 15)
         lblFulNum.TabIndex = 11
@@ -132,7 +134,7 @@ Partial Class Game
         ' lblCstNum
         ' 
         lblCstNum.AutoSize = True
-        lblCstNum.Location = New Point(69, 57)
+        lblCstNum.Location = New Point(261, 47)
         lblCstNum.Name = "lblCstNum"
         lblCstNum.Size = New Size(19, 15)
         lblCstNum.TabIndex = 12
@@ -141,7 +143,7 @@ Partial Class Game
         ' rdoDiesel
         ' 
         rdoDiesel.AutoSize = True
-        rdoDiesel.Location = New Point(188, 95)
+        rdoDiesel.Location = New Point(380, 85)
         rdoDiesel.Name = "rdoDiesel"
         rdoDiesel.Size = New Size(105, 19)
         rdoDiesel.TabIndex = 13
@@ -152,7 +154,7 @@ Partial Class Game
         ' rdoPetrol
         ' 
         rdoPetrol.AutoSize = True
-        rdoPetrol.Location = New Point(22, 95)
+        rdoPetrol.Location = New Point(214, 85)
         rdoPetrol.Name = "rdoPetrol"
         rdoPetrol.Size = New Size(105, 19)
         rdoPetrol.TabIndex = 14
@@ -160,11 +162,20 @@ Partial Class Game
         rdoPetrol.Text = "Click For Petrol"
         rdoPetrol.UseVisualStyleBackColor = True
         ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.Location = New Point(12, 12)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(196, 137)
+        PictureBox1.TabIndex = 15
+        PictureBox1.TabStop = False
+        ' 
         ' Game
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(306, 177)
+        ClientSize = New Size(503, 157)
+        Controls.Add(PictureBox1)
         Controls.Add(rdoPetrol)
         Controls.Add(rdoDiesel)
         Controls.Add(lblCstNum)
@@ -179,7 +190,9 @@ Partial Class Game
         Controls.Add(btnFul)
         Controls.Add(btnMnu)
         Name = "Game"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Game"
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -198,4 +211,5 @@ Partial Class Game
     Friend WithEvents lblCstNum As Label
     Friend WithEvents rdoDiesel As RadioButton
     Friend WithEvents rdoPetrol As RadioButton
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

@@ -103,6 +103,7 @@ Partial Class Login
         Controls.Add(lblPsw)
         Controls.Add(lblUsr)
         Name = "Login"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Login"
         ResumeLayout(False)
         PerformLayout()

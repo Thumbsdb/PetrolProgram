@@ -22,90 +22,84 @@ Partial Class Menu
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Menu))
         btnExt = New Button()
         btnLgn = New Button()
         btnStr = New Button()
         btnOpt = New Button()
-        lblTitle = New Label()
-        btnDebug = New Button()
+        PictureBox1 = New PictureBox()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' btnExt
         ' 
-        btnExt.Location = New Point(12, 155)
+        btnExt.Font = New Font("Segoe UI", 18F)
+        btnExt.Location = New Point(12, 176)
         btnExt.Name = "btnExt"
-        btnExt.Size = New Size(75, 23)
+        btnExt.Size = New Size(96, 45)
         btnExt.TabIndex = 4
         btnExt.Text = "Exit"
         btnExt.UseVisualStyleBackColor = True
         ' 
         ' btnLgn
         ' 
-        btnLgn.Location = New Point(12, 126)
+        btnLgn.Font = New Font("Segoe UI", 18F)
+        btnLgn.Location = New Point(12, 114)
         btnLgn.Name = "btnLgn"
-        btnLgn.Size = New Size(75, 23)
+        btnLgn.Size = New Size(96, 45)
         btnLgn.TabIndex = 3
         btnLgn.Text = "Login"
         btnLgn.UseVisualStyleBackColor = True
         ' 
         ' btnStr
         ' 
-        btnStr.FlatStyle = FlatStyle.Popup
-        btnStr.Font = New Font("Candara", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnStr.Location = New Point(12, 43)
+        btnStr.Font = New Font("Segoe UI", 18F)
+        btnStr.Location = New Point(12, 12)
         btnStr.Name = "btnStr"
-        btnStr.Size = New Size(113, 48)
+        btnStr.Size = New Size(96, 45)
         btnStr.TabIndex = 1
         btnStr.Text = "Start"
         btnStr.UseVisualStyleBackColor = True
         ' 
         ' btnOpt
         ' 
-        btnOpt.Location = New Point(12, 97)
+        btnOpt.Font = New Font("Segoe UI", 18F)
+        btnOpt.Location = New Point(12, 63)
         btnOpt.Name = "btnOpt"
-        btnOpt.Size = New Size(75, 23)
+        btnOpt.Size = New Size(96, 45)
         btnOpt.TabIndex = 2
-        btnOpt.Text = "Options"
+        btnOpt.Text = "Help"
         btnOpt.UseVisualStyleBackColor = True
         ' 
-        ' lblTitle
+        ' PictureBox1
         ' 
-        lblTitle.AutoSize = True
-        lblTitle.Location = New Point(319, 76)
-        lblTitle.Name = "lblTitle"
-        lblTitle.Size = New Size(107, 15)
-        lblTitle.TabIndex = 4
-        lblTitle.Text = "Petrol Pump Game"
-        ' 
-        ' btnDebug
-        ' 
-        btnDebug.Location = New Point(12, 192)
-        btnDebug.Name = "btnDebug"
-        btnDebug.Size = New Size(75, 23)
-        btnDebug.TabIndex = 5
-        btnDebug.Text = "Debug"
-        btnDebug.UseVisualStyleBackColor = True
+        PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), Image)
+        PictureBox1.BackgroundImageLayout = ImageLayout.Zoom
+        PictureBox1.Location = New Point(135, 12)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(284, 209)
+        PictureBox1.TabIndex = 5
+        PictureBox1.TabStop = False
         ' 
         ' Menu
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(525, 411)
-        Controls.Add(btnDebug)
-        Controls.Add(lblTitle)
+        ClientSize = New Size(444, 237)
+        Controls.Add(PictureBox1)
         Controls.Add(btnOpt)
         Controls.Add(btnStr)
         Controls.Add(btnLgn)
         Controls.Add(btnExt)
         Name = "Menu"
+        StartPosition = FormStartPosition.CenterScreen
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
-        PerformLayout()
     End Sub
 
     Friend WithEvents btnExt As Button
     Friend WithEvents btnLgn As Button
     Friend WithEvents btnStr As Button
     Friend WithEvents btnOpt As Button
-    Friend WithEvents lblTitle As Label
-    Friend WithEvents btnDebug As Button
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

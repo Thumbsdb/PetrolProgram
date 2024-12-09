@@ -19,7 +19,13 @@
     Public Shared Function FuelPriceCalculator(ByVal Cost As Decimal)
         Dim Output As Decimal
         Output = Cost / 100
-        Return ("£" & Output & " /L")
+        If Output > 100 Then
+            Output = Output * 10
+            Return ("£" & Output & " /L")
+        Else
+            Return ("£" & Output & " /L")
+        End If
+
     End Function
     Public Shared Sub LabelUpdate()
         If UpdatedPetrol = 0 Then

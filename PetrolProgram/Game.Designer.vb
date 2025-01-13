@@ -35,9 +35,9 @@ Partial Class Game
         lblPtlNum = New Label()
         lblFulNum = New Label()
         lblCstNum = New Label()
+        PicPump = New PictureBox()
         rdoDiesel = New RadioButton()
         rdoPetrol = New RadioButton()
-        PicPump = New PictureBox()
         CType(PicPump, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -140,28 +140,6 @@ Partial Class Game
         lblCstNum.TabIndex = 12
         lblCstNum.Text = "£0"
         ' 
-        ' rdoDiesel
-        ' 
-        rdoDiesel.AutoSize = True
-        rdoDiesel.Location = New Point(335, 82)
-        rdoDiesel.Name = "rdoDiesel"
-        rdoDiesel.Size = New Size(105, 19)
-        rdoDiesel.TabIndex = 13
-        rdoDiesel.TabStop = True
-        rdoDiesel.Text = "Click For Diesel"
-        rdoDiesel.UseVisualStyleBackColor = True
-        ' 
-        ' rdoPetrol
-        ' 
-        rdoPetrol.AutoSize = True
-        rdoPetrol.Location = New Point(169, 82)
-        rdoPetrol.Name = "rdoPetrol"
-        rdoPetrol.Size = New Size(105, 19)
-        rdoPetrol.TabIndex = 14
-        rdoPetrol.TabStop = True
-        rdoPetrol.Text = "Click For Petrol"
-        rdoPetrol.UseVisualStyleBackColor = True
-        ' 
         ' PicPump
         ' 
         PicPump.BackgroundImage = My.Resources.Resources.gas_pump_3971793_1920
@@ -172,6 +150,28 @@ Partial Class Game
         PicPump.Size = New Size(139, 137)
         PicPump.TabIndex = 15
         PicPump.TabStop = False
+        ' 
+        ' rdoDiesel
+        ' 
+        rdoDiesel.AutoSize = True
+        rdoDiesel.Location = New Point(326, 83)
+        rdoDiesel.Name = "rdoDiesel"
+        rdoDiesel.Size = New Size(105, 19)
+        rdoDiesel.TabIndex = 13
+        rdoDiesel.TabStop = True
+        rdoDiesel.Text = "Click For Diesel"
+        rdoDiesel.UseVisualStyleBackColor = True
+        ' 
+        ' rdoPetrol
+        ' 
+        rdoPetrol.AutoSize = True
+        rdoPetrol.Location = New Point(171, 83)
+        rdoPetrol.Name = "rdoPetrol"
+        rdoPetrol.Size = New Size(105, 19)
+        rdoPetrol.TabIndex = 14
+        rdoPetrol.TabStop = True
+        rdoPetrol.Text = "Click For Petrol"
+        rdoPetrol.UseVisualStyleBackColor = True
         ' 
         ' Game
         ' 
@@ -212,7 +212,7 @@ Partial Class Game
     Friend WithEvents lblPtlNum As Label
     Friend WithEvents lblFulNum As Label
     Friend WithEvents lblCstNum As Label
+    Friend WithEvents PicPump As PictureBox
     Friend WithEvents rdoDiesel As RadioButton
     Friend WithEvents rdoPetrol As RadioButton
-    Friend WithEvents PicPump As PictureBox
 End Class

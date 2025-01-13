@@ -76,7 +76,6 @@ Public Class Game
         Return (FuelCost)
     End Function
     Private Sub Game_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
         If UpdatedPetrol > 0 Then
             lblPtlNum.Text = FuelPriceCalculator(UpdatedPetrol)
         Else
@@ -90,4 +89,5 @@ Public Class Game
             lblDslNum.Text = FuelPriceCalculator(DieselCost)
         End If
     End Sub
+
 End Class

@@ -8,6 +8,7 @@
     <MyType>WindowsForms</MyType>
     <ApplicationIcon>1486505255-filling-station-fuel-station-gas-station-petrol-pump-petrol-station_81418.ico</ApplicationIcon>
     <PackageIcon></PackageIcon>
+    <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
 
   <ItemGroup>
